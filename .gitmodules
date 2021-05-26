@@ -1,0 +1,6 @@
+[submodule "animals-api"]
+	path = animals-api
+	url = git@github.com:catapultcx/animals-api.git
+[submodule "animals-ui"]
+	path = animals-ui
+	url = git@github.com:catapultcx/animals-ui.git
