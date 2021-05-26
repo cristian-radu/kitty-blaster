@@ -8,6 +8,7 @@ Prerequisites:
 
 - [Docker Compose](https://docs.docker.com/compose/install/)
 - [Maven](https://maven.apache.org/install.html)
+- [Gatling](https://gatling.io/docs/current/installation/#installation)
 
 This project imports [animals-api](https://github.com/catapultcx/animals-api) and [animals-ui](https://github.com/catapultcx/animals-ui) as git submodules.
 
@@ -36,4 +37,8 @@ Start the two services in the background.
 docker-compose up -d
 ```
 
-Check that everything is working by navigating to the UI's [cats](http://localhost:2997/cats) view. You should see a table containing cat names and descriptions.
+Check that everything is working by navigating to the UI's [cats](http://localhost:2997/cats) view.
+
+Now examine the Gatling [simulation](./gatling-simulations/UI2APILoadTest.scala) for load testing the UI and API components together.
+
+Run the simulation and analyze the report, looking for areas where performance could be improved.
